@@ -78,10 +78,10 @@ main:
 
 ;13.  bRem18 = wNum1 % bNum4  
 
-  mov ax, [wNum1]
-  xor ah, ah
+  mov eax, [wNum1]
+  xor dx, dx
   div [bNum4]
-  mov [bRem18], ah
+  mov [bRem18], ax
 
 
   mov eax, 0
