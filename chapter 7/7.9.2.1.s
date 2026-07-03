@@ -61,7 +61,7 @@ main:
 ;7.
   ;wAns11 = bNum1 * bNum3  
   mov al, [bNum1]
-  mul [bNum3]
+  mul byte[bNum3]
   mov [wAns11], ax
 
 
