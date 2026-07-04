@@ -30,9 +30,9 @@ bRem18   db  0
 
 section .text
 
-global main
+global _start
 
-main:
+_start:
 
 ;1.
   mov al, [bNum1]
