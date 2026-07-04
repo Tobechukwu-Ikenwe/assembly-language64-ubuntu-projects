@@ -84,5 +84,6 @@ _start:
   mov [bRem18], ax
 
 
-  mov eax, 0
-  ret
+  mov eax, 60         ; sys_exit system call number
+  mov edi, 0          ; exit code 0 (success)
+  syscall             ; call the kernel to exit
